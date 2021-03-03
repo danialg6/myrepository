@@ -1,4 +1,4 @@
-const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")();//
 let a = +prompt("Enter the side of triangle: ");
 let b = +prompt("Enter the side of triangle: ");
 let c = +prompt("Enter the side of triangle: ");
