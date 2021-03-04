@@ -1,3 +1,4 @@
+"use srtrict";
 let prompt=require('prompt-sync')();
 let number=prompt("Enter a number: ");
 let remainder=0;;

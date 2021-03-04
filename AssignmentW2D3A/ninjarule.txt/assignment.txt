@@ -1,0 +1,6 @@
+Curly Braces
+Line Length
+Indents
+Vertical indents: empty lines for splitting code into logical blocks.
+Semicolons
+Nesting Levels
