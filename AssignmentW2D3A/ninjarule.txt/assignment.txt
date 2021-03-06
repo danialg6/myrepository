@@ -1,6 +1,23 @@
-Curly Braces
-Line Length
-Indents
-Vertical indents: empty lines for splitting code into logical blocks.
-Semicolons
-Nesting Levels
+
+
+W2D4 Assignment
+i did  number one to number 5 questions  before 5 pm, 
+but the rest of the time i spent on number 6 but i could not complete it. 
+so if you give us on some hint tomorrow i hope i will do it 
+since number one and number 7 needs some time. thank you
+https://github.com/danialg6/myrepository/tree/master/AssignmentW2D4/W2D4AssUniteTest
+
+//W2D4 Assignment report is here 
+
+[Wednesday 9:41 PM] Danial Berhe
+    when you teach us everything was clear for me, 
+but after we done the class when i start doing on my assignment 
+i faced a lot of challenges about how to fix the programs. 
+just i was struggling by myself and i was asking my friends after dinner time. 
+due to the presence of many challenges my time becomes up. so i just submitted my 
+assignment at 9:30, so due to that i have decided to include my comments here. 
+
+Thank you professor
+
+
+
