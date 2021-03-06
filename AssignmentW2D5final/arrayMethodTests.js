@@ -84,10 +84,10 @@ describe("reverse2String", function () {
  ///*   6. (EC) Write a function that merges two sorted arrays into one single sorted array. Make use of shift and push array methods. */
  describe("merge via shift and push", function () {
 
-     it("shiftPush helper", function () {
-         console.log(arrays.shiftPush([1, 3, 8], 4, []));
-         assert.deepStrictEqual(arrays.shiftPush([1, 3, 8], 4, []), [1, 3]);
-     });
+    //  it("shiftPush helper", function () {
+    //      console.log(arrays.shiftPush([1, 3, 8], 4, []));
+    //      assert.deepStrictEqual(arrays.shiftPush([1, 3, 8], 4, []), [1, 3]);
+    //  });
 
      it("138 merge with 059 ", function () {
          console.log(arrays.mergesSortedarr([1, 3, 8], [0, 5, 9]));
@@ -98,4 +98,10 @@ describe("reverse2String", function () {
          console.log(arrays.mergesSortedarr([1, 3, 8], [0, 5, 9]));
          assert.deepStrictEqual(arrays.mergesSortedarr([1, 3, 8], [0, 5, 9]), [0, 1, 3, 5, 8, 9]);
      });
+});
+describe("filtering palindrom string from an array", function(){
+    it("filtering  palindrom string from an array", function(){
+        console.log(arrays.isPalindrome(["carecar", 1344, 12321, "did", "cannot"]));
+        assert.deepStrictEqual(arrays.isPalindrome(["carecar", 1344, 12321, "did", "cannot"],[12321,"did"]));
+    });
 });
