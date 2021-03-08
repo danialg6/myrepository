@@ -47,16 +47,32 @@ console.log(tranferToString(arr1));
  * @param {Array} arr2 second array
  * @return {Array} finding the merged array 
  */
-function mergesSortedarr(arr1, arr2) {
+// function mergesSortedarr(arr1, arr2) {
  
-    let arr = [];
-    arr = arr1.concat(arr2).sort();
+//     let arr = [];
+//     arr = arr1.concat(arr2).sort();
  
-    return arr;
+//     return arr;
+// }
+// let arr4 = [1, 2, 3, 4];
+// let arr2 = [3, 4, 5, 6];
+// console.log(mergesSortedarr(arr4, arr2));
+function mergesSortedarr(arr1,arr2){
+    let result=[];
+   // result=arr1.concat(arr2,arr3);
+   for(let i=0;i<arr1.length;i++){
+   result.push(arr1[i]);
+   }
+   for(let i=0;i<arr2.length;i++){
+      result.push( arr2[i]);
+   }
+    return result.sort();//result.unshift(arr2);
 }
-let arr4 = [1, 2, 3, 4];
-let arr2 = [3, 4, 5, 6];
-console.log(mergesSortedarr(arr4, arr2));
+let array1=[1,2,3];
+let array2=[3,4,5];
+
+console.log(mergesSortedarr(array1,array2));
+
 
 /**
  * 
@@ -122,5 +138,44 @@ const findPalindrome = arr => {
 console.log(findPalindrome(arr));
 
 
+function  enhancedIncludes(arr, value) {
+    let result;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === value) {
+            result = true;
+            break;
+        } else {
+            result = false;
+        }
+    }
+    return result;
+}
+let array = [1, 2, 3, 4, 2] ;
+let value = 2;
+console.log( enhancedIncludes(array, value));
+let index;
+
+for (let i = 0; i < array.length; i++) {
+    if (array.indexOf(value) !== -1 ) {
+        index = array.indexOf(value);
+
+    } else {
+        index = -1;
+    }
+}
+
+console.log(index);
+let position;
+for (let i = 0; i < array.length; i++) {
+    if (array.lastIndexOf(value) !== -1 ) {
+        position = array.lastIndexOf(value);
+
+    } else {
+        position = -1;
+    }
+}
+console.log(position);
+
+
 module.exports={isArrayEqual,tranferToString,mergesSortedarr,
-    checkPaliendrom,reverse,isPalindrome}
+    checkPaliendrom,reverse,isPalindrome,enhancedIncludes}
