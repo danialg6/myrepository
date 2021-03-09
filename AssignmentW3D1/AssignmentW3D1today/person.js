@@ -7,7 +7,7 @@
  * @return {boolean} returns true if the two objects are equal
  */
 function  isPersonEqual(obj1, obj2){
-    return (obj1===obj2);
+    return (obj1.name===obj2.name&&obj1.age===obj2.age);
 }
 const sam1 = { name: "Sam", age: 10 };
 const sam2 = { name: "Sam", age: 10 };

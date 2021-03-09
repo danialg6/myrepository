@@ -1,6 +1,6 @@
 "use strict";
 const assert = require("assert");
-const str = require("./strings.js");  
+const str = require("./objectString.js");  
 
 
 /*

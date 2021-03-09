@@ -1,5 +1,5 @@
 "use strict";
-"eslint-disable";
+/*eslint-disable*/;
 /**
  * 
  * @param {String} str1 string
@@ -7,21 +7,22 @@
  * @return {String} finding sufix of two strings 
  */
 function suffix(str1,str2){
-    let arr1=str1.split("");
-    let arr2=str2.split("");
-    let strreturn1="";
-    let strreturn2="";
-    for(let i=arr1.length-1;i>=0;i--){
-        strreturn1=strreturn1+arr1[i];
+    let sufixresult="";
+    let count=0;
+    let length1=str1.length-1;
+    let length2=str2.length-1;
+    while(true){
+        if(str1[length1-count]===str2[length2-count]){
+            sufixresult=str1[length1-count]+sufixresult;
+            count++;
+        }else{
+            break;
+        }
+        
     }
-    for(let i=arr2.length-1;i>=0;i--){
-        strreturn2=strreturn2+arr2[i];
-    }
-let count1=str1[str1.length-1];
-let count2=str2[str2.length-1];
+    return sufixresult;
 
-    return str1;
 }
-let inputstring="hello mom seeing";
-let abc=inputstring.split("");
-console.log(abc);
+let inputstring1="reading";
+let inputstring2="seeding";
+console.log(suffix(inputstring1,inputstring2));

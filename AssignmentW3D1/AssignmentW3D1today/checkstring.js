@@ -8,6 +8,11 @@
 function  checkSpam(str){
     let result;
     let arraystring=str.split(" ");
+    // if(str.includes("lottery")||str.includes("prize")){
+    // result=true;
+    // }else{
+    //     result=false;
+    // }
 for(let elements of arraystring){
     if(elements==="lottery"||elements==="prize"){
 result=true;
@@ -18,6 +23,6 @@ break;
 }
     return result;
 }
-let str="hell mom i got lottery and it is prize";
+let str="hello mom lottery i got  and it is ";
 console.log(checkSpam(str));
 
